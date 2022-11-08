@@ -1,0 +1,11 @@
+// Find the no of elements in an array
+int a[5]; // size of a = 5 * 2 = 10 for int(2bytes)
+int n = sizeof(a)/sizeof(a[0]) // 10/2 ----> 5
+
+char a[50]; // size of a = 50 * 1 = 50 for char(1byte)
+int n = sizeof(a)/sizeof(a[0]) // 50/1 ----> 50
+
+float f[20]; // size of f = 20 * 4 = 80 for float(4byte)
+int n = sizeof(f)/sizeof(f[0]) // 80/4 ----> 20
+
+
