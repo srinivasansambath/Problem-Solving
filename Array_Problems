@@ -30,3 +30,24 @@ int main()
 10 30 15 38 42  
 */
 
+//Write a program to double every element in an array
+#include <stdio.h>
+void printArray (int *p, int n)
+{
+ for(int i = 0; i<n; i++)
+ {
+     p[i] = p[i]*2;
+ }
+}
+int main()
+{
+    int a[5] = {10,30,15,38,42};
+    int n;
+    n = sizeof(a) / sizeof(a[0]);
+    printArray(a,n);
+    return 0;
+}
+
+// OUTPUT:
+No Output
+// Because we are here trying to double the values in an array but not to print them.
