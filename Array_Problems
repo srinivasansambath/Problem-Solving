@@ -51,3 +51,17 @@ int main()
 // OUTPUT:
 No Output
 // Because we are here trying to double the values in an array but not to print them.
+
+// Swapping program
+#include <stdio.h>
+
+int main()
+{
+    int a = 20, b=30;
+    int t;
+    t =  a;
+    a = b;
+    b = t;
+    printf("%d,%d",a,b);
+    return 0;
+}
