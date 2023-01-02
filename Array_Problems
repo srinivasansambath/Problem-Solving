@@ -97,3 +97,28 @@ int main()
 }
 OUTPUT:
 25,10,50,45
+
+// To print reversed elements in an array
+#include <stdio.h>
+void reverseArray(int *p,int n)
+{
+    int t[n];
+    int i,j=n-1;
+    for(i=0;i<n;i++)
+    {
+        t[i]=p[j];
+        j--;
+    }
+    for(i = 0;i<n;i++)
+    {
+        p[i]=t[i];
+    }
+    for(i = 0;i<n;i++) printf("%d",p[i]);
+}
+void reverseArray(int *p,int n);
+int main()
+{
+    int a[]={10,20,30,40};
+    int n = sizeof(a)/sizeof(a[0]);
+    reverseArray(a,n);
+}
